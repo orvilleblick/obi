@@ -61,7 +61,7 @@ def retrieve_messages(channel_id, token):
                 print(f"Failed to retrieve messages: {e}")
                 break
     
-    print(f"Retrieved {len(messages)} messages")  # Debug print
+    print(f"Retrieved {len(messages)} messages")  # Debug printg
     print(json.dumps(messages[0], indent=4))  # Debug print one message structure
 
     return messages
