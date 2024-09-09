@@ -68,7 +68,7 @@ def retrieve_messages(channel_id, token):
 
 def format_timestamp(timestamp):
     dt = datetime.fromisoformat(timestamp.replace('Z', '+00:00'))
-    return dt.strftime('%B %d, %Y %I:%M %p')  # Full month name, 12-hour clock, AM/PM
+    return dt.strftime('%B %d, %Y %I:%M %p')  # Full month name, 12-hour clock, AM/PM f
 
 def extract_unique_embed_info(messages): #this handles the counts for each url, unique
     url_data = {} #this is the array that holds each field from extraction
